@@ -1,0 +1,11 @@
+# ninja log v5
+3	231	6983444264630880	CMakeFiles/Swiss_Bank.dir/Ncc_Bank.c.obj	62ba9b7f24a5638f
+3	112	6983446864853048	CMakeFiles/Swiss_Bank.dir/main.c.obj	413f4cac4d4e7dea
+112	242	6983446866098164	Swiss_Bank.exe	a5fb3167c3c41877
+0	169	6983449932028677	CMakeFiles/Swiss_Bank.dir/Ncc_Bank.c.obj	62ba9b7f24a5638f
+3	109	6983450162735928	CMakeFiles/Swiss_Bank.dir/Ncc_Bank.c.obj	62ba9b7f24a5638f
+109	265	6983450164222719	Swiss_Bank.exe	85ad9813c9b4275e
+3	176	6983450962852699	CMakeFiles/Swiss_Bank.dir/Ncc_Bank.c.obj	62ba9b7f24a5638f
+176	391	6983450964951556	Swiss_Bank.exe	85ad9813c9b4275e
+4	130	6983451278282974	CMakeFiles/Swiss_Bank.dir/Ncc_Bank.c.obj	62ba9b7f24a5638f
+130	261	6983451279542227	Swiss_Bank.exe	85ad9813c9b4275e
