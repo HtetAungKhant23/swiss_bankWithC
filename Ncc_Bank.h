@@ -7,7 +7,7 @@
 
 #include "stdio.h"
 #include "stdlib.h"
-#define USIZE 100
+#define USIZE 1000
 
 struct transaction{
     char note[200];
@@ -26,11 +26,11 @@ struct database{
     int account_level;
     unsigned int min_opening_deposit;
     char currency[30];
-    unsigned int current_amount;
+    unsigned long long int current_amount;
     char loan_status[50];
     unsigned int monthly_income;
     unsigned int loan_amount;
-    unsigned int loan_rate;
+    float loan_rate;
     char address[50];
     struct transaction tranRC[100];
 
