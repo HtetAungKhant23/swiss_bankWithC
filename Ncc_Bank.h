@@ -38,4 +38,8 @@ struct database{
 
 struct database db[USIZE];
 
+int g_idx;
+int e_found;
+int current_idx;
+
 #endif //SWISS_BANK_NCC_BANK_H

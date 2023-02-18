@@ -11,8 +11,9 @@ char option_checking(char op[2]);
 void main_menu();
 void sign_up();
 void sign_in();
-//void emailexist
-
+void email_exist_checking(char u_em[50]);
+int size_array(char size[50]);
+int compare_two_arr(char first_arr[50], char second_arr[50], int len);
 
 void home(){
     printf("hello swiss bank!!");
@@ -57,9 +58,80 @@ void main_menu(){
 void sign_in(){
 
     char u_email[30];
+    char u_pass[30];
     printf("Enter your email : ");
     scanf(" %[^\n]",&u_email[0]);
+    e_found = 0;
+    email_exist_checking(u_email);
+    if (e_found == 1){
+        printf("enter your password : ");
+        scanf(" %[^\n]",&u_pass[0]);
+        int re1 = size_array(db[current_idx].password);
+        int re2 = size_array(u_pass);
+        if (re1 == re2){
 
+        } else{
+
+        }
+    } else{
+        printf("your email not found!");
+        main_menu();
+    }
+
+}
+
+void email_exist_checking(char u_em[30]){
+
+    int found = 0;
+    int result1 = size_array(u_em);
+
+    for (int i = 0; i < g_idx; i++){
+
+        int result2 = 0;
+        result2 = size_array(db[i].email);
+
+        if (result1 == result2){
+
+            found = compare_two_arr(db[i].email,u_em, result1);
+
+            if (found == result1){
+                current_idx = i;
+                e_found = 1;
+                return;
+            }
+
+        }
+
+    }
+
+}
+
+int compare_two_arr(char first_arr[30], char second_arr[30], int len){
+
+    int same = 0;
+
+    for (int i = 0; i < len; i++){
+
+        if (first_arr[i] == second_arr[i]){
+            same++;
+        } else{
+            break;
+        }
+
+    }
+
+    return same;
+
+}
+
+int size_array(char size_arr[30]){
+    int count = 0;
+
+    while (size_arr[count] != '\0'){
+        count++;
+    }
+
+    return count;
 
 }
 
