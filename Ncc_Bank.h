@@ -19,7 +19,7 @@ struct database{
     char nrc[20];
     char email[40];
     char password[40];
-    unsigned int phone_number;
+    char phone_number[15];
     char encryption_key[50];
     char recovery_key[50];
     char account_status[50];
@@ -42,6 +42,7 @@ int g_idx = 0;
 int e_found = 0;
 int current_idx = 0;
 int str_pass = 0;
+int nrc_format = 0;
 
 
 #endif //SWISS_BANK_NCC_BANK_H

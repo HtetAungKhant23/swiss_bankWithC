@@ -5,8 +5,6 @@
 #include "Ncc_Bank_Fun.h"
 
 int main(){
-    printf("this is red");
     home();
-
     return 0;
 }

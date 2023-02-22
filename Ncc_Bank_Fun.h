@@ -13,6 +13,7 @@ void printing_all_user_info();
 void sign_up();
 void sign_in();
 void strong_pass(char pass[30]);
+void nrc_validation(char nrc[20]);
 void email_exist_checking(char u_em[50]);
 int size_array(char size[50]);
 int compare_two_arr(char first_arr[50], char second_arr[50], int len);
@@ -62,49 +63,6 @@ void main_menu(){
 
 }
 
-
-void check_pass(){
-
-    printf("this is checking password!");
-
-}
-
-
-
-//void fill_password(){
-//
-//    wrong_pass = 5;
-//    char u_pass[30];
-//    while (1) {
-//        printf("enter your password : ");
-//        scanf(" %[^\n]", &u_pass[0]);
-//        int re1 = size_array(db[current_idx].password);
-//        int re2 = size_array(u_pass);
-//        if (re1 == re2) {
-//
-//            int found = compare_two_arr(db[current_idx].password,u_pass,re1);
-//            if (found == re1){
-//
-//
-//
-//                break;
-//            } else{
-//                printf("password wrong!");
-//            }
-//
-//        } else {
-//            wrong_pass--;
-//            printf("password wrong!");
-//            if (wrong_pass == 0){
-//                break;
-//            }
-//            printf("you have %dtimes to try!",wrong_pass);
-//        }
-//    }
-//
-//}
-
-
 void sign_in(){
 
     char u_email[40];
@@ -112,12 +70,9 @@ void sign_in(){
     scanf(" %[^\n]",&u_email[0]);
     e_found = 0;
     email_exist_checking(u_email);
-//    if (e_found == 1){
-//        fill_password();
-//    } else{
-//        printf("your email not found!");
-//        main_menu();
-//    }
+
+
+
 
 }
 
@@ -126,6 +81,7 @@ void sign_up(){
     char u_email[40];
     char u_pass[40];
     char confirm_pass[40];
+    char nrc[20];
     printf("this is sign_up function!");
     printf("Enter your email : ");
     scanf(" %[^\n]",&u_email[0]);
@@ -166,6 +122,12 @@ void sign_up(){
                     for (int i=0; i<r1; i++){
                         db[g_idx].password[i] = u_pass[i];
                     }
+
+                    printf("enter your nrc number : ");
+                    scanf(" %[^\n]",&nrc[0]);
+                    nrc_validation(nrc);
+                    printf("nrc format is %d\n",nrc_format);
+
                     g_idx++;
                     break;
                 } else {
@@ -176,6 +138,41 @@ void sign_up(){
             }
         }
         main_menu();
+    }
+
+}
+
+
+void nrc_validation(char nrc[20]){
+    nrc_format = 0;
+    int size = size_array(nrc);
+    int num_count[7] = {0,0,0,0,0,0,0};
+    for (int i=1; i<size+1; i++){
+
+        if (nrc[size-i] >= 48 && nrc[size-i] <= 57){
+            num_count[0]++;
+        } else if (nrc[size-i] == 41){
+            num_count[1]++;
+        } else if (nrc[size-i] == 78){
+            num_count[2]++;
+        } else if (nrc[size-i] == 40){
+            num_count[3]++;
+        } else if (nrc[size-i] >= 65 && nrc[size-i] <= 90 || nrc[size-i] >= 97 && nrc[size-i] <= 122){
+            num_count[4]++;
+        } else if (nrc[size-i] == 47){
+            num_count[5]++;
+        } else if (nrc[size-i] >= 48 && nrc[size-i] <= 57){
+            num_count[6]++;
+        }
+
+    }
+
+    for (int i=0; i<7; i++){
+        if (num_count[i] >= 1 && num_count[0] == 6){
+            nrc_format = 1;
+        } else{
+            nrc_format = 0;
+        }
     }
 
 }

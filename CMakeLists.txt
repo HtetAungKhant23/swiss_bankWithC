@@ -3,4 +3,4 @@ project(Swiss_Bank C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Swiss_Bank Ncc_Bank.h Ncc_Bank_Fun.h Ncc_Bank.c colour.h)
+add_executable(Swiss_Bank nrc_format.c)
