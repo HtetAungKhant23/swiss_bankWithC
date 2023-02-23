@@ -49,8 +49,8 @@ cmake_ninja_workdir = D$:/National$ Cyber$ City$ Uni/Swiss_Bank/cmake-build-debu
 
 build cmake_object_order_depends_target_Swiss_Bank: phony || CMakeFiles/Swiss_Bank.dir
 
-build CMakeFiles/Swiss_Bank.dir/nrc_format.c.obj: C_COMPILER__Swiss_Bank_Debug D$:/National$ Cyber$ City$ Uni/Swiss_Bank/nrc_format.c || cmake_object_order_depends_target_Swiss_Bank
-  DEP_FILE = CMakeFiles\Swiss_Bank.dir\nrc_format.c.obj.d
+build CMakeFiles/Swiss_Bank.dir/encryptAndDecrypt.c.obj: C_COMPILER__Swiss_Bank_Debug D$:/National$ Cyber$ City$ Uni/Swiss_Bank/encryptAndDecrypt.c || cmake_object_order_depends_target_Swiss_Bank
+  DEP_FILE = CMakeFiles\Swiss_Bank.dir\encryptAndDecrypt.c.obj.d
   FLAGS = -g -std=gnu11
   OBJECT_DIR = CMakeFiles\Swiss_Bank.dir
   OBJECT_FILE_DIR = CMakeFiles\Swiss_Bank.dir
@@ -63,7 +63,7 @@ build CMakeFiles/Swiss_Bank.dir/nrc_format.c.obj: C_COMPILER__Swiss_Bank_Debug D
 #############################################
 # Link the executable Swiss_Bank.exe
 
-build Swiss_Bank.exe: C_EXECUTABLE_LINKER__Swiss_Bank_Debug CMakeFiles/Swiss_Bank.dir/nrc_format.c.obj
+build Swiss_Bank.exe: C_EXECUTABLE_LINKER__Swiss_Bank_Debug CMakeFiles/Swiss_Bank.dir/encryptAndDecrypt.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Swiss_Bank.dir

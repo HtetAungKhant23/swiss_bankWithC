@@ -3,4 +3,4 @@ project(Swiss_Bank C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Swiss_Bank nrc_format.c)
+add_executable(Swiss_Bank encryptAndDecrypt.c)

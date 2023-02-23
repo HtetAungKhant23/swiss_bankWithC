@@ -9,13 +9,10 @@ int country;
 
 int size_array(char size_arr[30]){
     int count = 0;
-
     while (size_arr[count] != '\0'){
         count++;
     }
-
     return count;
-
 }
 
 void nrc_validation(char nrc[20]){
@@ -24,11 +21,8 @@ void nrc_validation(char nrc[20]){
     int found = 0;
     int check[6]={0,0,0,0,0,0};
     int size = size_array(nrc);
-
     if (size >= 14) {
-
         for (int i = 1; i < 10; i++) {
-
             if (i < 7) {
                 if (i == 1){
                     if (nrc[i-1] >= 48 && nrc[i-1] <= 57){
@@ -46,7 +40,6 @@ void nrc_validation(char nrc[20]){
                             break;
                         }
                     }
-
                     if (found == 2){
                         for (int j=2; j<size-9; j++){
                             if (nrc[j] >= 97 && nrc[j] <= 122 || nrc[j] >= 65 && nrc[j] <= 90){
@@ -64,7 +57,6 @@ void nrc_validation(char nrc[20]){
                             }
                         }
                     }
-
                 }
                 if (nrc[size - i] >= 48 && nrc[size - i] <= 57) {
                     check[2] = 1;
@@ -80,9 +72,7 @@ void nrc_validation(char nrc[20]){
             } else{
                 break;
             }
-
         }
-
         for (int i=0; i<6; i++){
             if (check[i] == 1){
                 nrc_format = 1;
@@ -92,13 +82,9 @@ void nrc_validation(char nrc[20]){
                 break;
             }
         }
-
     } else if (size == 9){
-
         if (nrc[0] == 83 || nrc[0] == 84 || nrc[0] == 77 || nrc[0] == 70 || nrc[0] == 71){
-
             if (nrc[size-1] >= 65 && nrc[size-1] <= 90){
-
                 for (int i = 0; i < size-2; i++) {
                     if (nrc[i+1] >= 48 && nrc[i+1] <= 57){
                         nrc_format = 1;
@@ -109,16 +95,10 @@ void nrc_validation(char nrc[20]){
                         break;
                     }
                 }
-
             }
-
         }
-
     }
-
-
 }
-
 
 int main(){
     char nrc_card[20];
@@ -137,9 +117,7 @@ int main(){
         } else{
             printf("try again!");
         }
-
     }
-
     return 0;
 }
 
