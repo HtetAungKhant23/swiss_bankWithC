@@ -1,14 +1,12 @@
 # ninja log v5
 4	155	6986718421484044	CMakeFiles/Swiss_Bank.dir/Ncc_Bank.c.obj	62ba9b7f24a5638f
 3	112	6983446864853048	CMakeFiles/Swiss_Bank.dir/main.c.obj	413f4cac4d4e7dea
-3	140	6987597289819986	CMakeFiles/Swiss_Bank.dir/encryptAndDecrypt.c.obj	1c0ddc211cdb31a2
-138	285	6988252842762300	Swiss_Bank.exe	32c7a4716adfb1fc
+3	131	6988409178817230	CMakeFiles/Swiss_Bank.dir/encryptAndDecrypt.c.obj	1c0ddc211cdb31a2
+132	296	6988409180393966	Swiss_Bank.exe	54a295b9048d16dd
 3	239	6987579628813382	CMakeFiles/Swiss_Bank.dir/nrc_format.c.obj	a330df20c486694d
 0	109	6987598221232289	CMakeFiles/Swiss_Bank.dir/encrypt_&_decrypt.c.obj	8cb4f98868e08a79
 2	138	6988252841345178	CMakeFiles/Swiss_Bank.dir/test.c.obj	2a8b9fce03e7fc5a
-1	165	6988279420335721	CMakeFiles/Swiss_Bank.dir/encryptAndDecrypt.c.obj	1c0ddc211cdb31a2
-166	335	6988279421979540	Swiss_Bank.exe	54a295b9048d16dd
-4	148	6988286257227150	CMakeFiles/Swiss_Bank.dir/encryptAndDecrypt.c.obj	1c0ddc211cdb31a2
-159	326	6988286258970299	Swiss_Bank.exe	54a295b9048d16dd
-4	130	6988297958274196	CMakeFiles/Swiss_Bank.dir/encryptAndDecrypt.c.obj	1c0ddc211cdb31a2
-130	293	6988297959812234	Swiss_Bank.exe	54a295b9048d16dd
+1	148	6988437012030191	CMakeFiles/Swiss_Bank.dir/encryptAndDecrypt.c.obj	1c0ddc211cdb31a2
+149	321	6988437013703313	Swiss_Bank.exe	54a295b9048d16dd
+3	121	6988438659730022	CMakeFiles/Swiss_Bank.dir/encryptAndDecrypt.c.obj	1c0ddc211cdb31a2
+121	255	6988438661019489	Swiss_Bank.exe	54a295b9048d16dd
